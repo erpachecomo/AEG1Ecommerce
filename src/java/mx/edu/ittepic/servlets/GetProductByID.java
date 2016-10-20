@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mx.edu.ittepic.servlets;
 
 import java.io.IOException;
@@ -15,14 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import mx.edu.ittepic.ejbs.Conect;
 
-/**
- *
- * @author luis
- */
-@WebServlet(name = "GetProductByID", urlPatterns = {"/GetProductByID"})
-public class GetProductByID extends HttpServlet {
-@EJB
+@WebServlet( name = "GetProductByID" , urlPatterns =
+         {
+             "/GetProductByID"
+} )
+public class GetProductByID extends HttpServlet
+{
+
+    @EJB
     private Conect ejb;
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -32,23 +29,23 @@ public class GetProductByID extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-          response.setContentType("application/json;charset=UTF-8");
-          response.setHeader("Cache-Control","no-store");
-       PrintWriter out = response.getWriter();
-       String productid = request.getParameter("productid");
-       
-       out.print(ejb.getProductsById(productid));
-        
-        
+    protected void processRequest( HttpServletRequest request , HttpServletResponse response )
+        throws ServletException , IOException
+    {
+        response.setContentType( "application/json;charset=UTF-8" );
+        response.setHeader( "Cache-Control" , "no-store" );
+        PrintWriter out = response.getWriter();
+        String productid = request.getParameter( "productid" );
+
+        out.print( ejb.getProductsById( productid ) );
+
         /*response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-             TODO output your page here. You may use following sample code. 
+             TODO output your page here. You may use following sample code.
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet GetProductByID</title>");            
+            out.println("<title>Servlet GetProductByID</title>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet GetProductByID at " + request.getContextPath() + "</h1>");
@@ -67,9 +64,10 @@ public class GetProductByID extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-      processRequest(request, response);
+    protected void doGet( HttpServletRequest request , HttpServletResponse response )
+        throws ServletException , IOException
+    {
+        processRequest( request , response );
     }
 
     /**
@@ -81,9 +79,10 @@ public class GetProductByID extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
+    protected void doPost( HttpServletRequest request , HttpServletResponse response )
+        throws ServletException , IOException
+    {
+        processRequest( request , response );
     }
 
     /**
@@ -92,7 +91,8 @@ public class GetProductByID extends HttpServlet {
      * @return a String containing servlet description
      */
     @Override
-    public String getServletInfo() {
+    public String getServletInfo()
+    {
         return "Short description";
     }// </editor-fold>
 

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mx.edu.ittepic.servlets;
 
 import java.io.IOException;
@@ -15,14 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import mx.edu.ittepic.ejbs.Conect;
 
-/**
- *
- * @author luis
- */
-@WebServlet(name = "UpdateRole", urlPatterns = {"/UpdateRole"})
-public class UpdateRole extends HttpServlet {
-@EJB
+@WebServlet( name = "UpdateRole" , urlPatterns =
+         {
+             "/UpdateRole"
+} )
+public class UpdateRole extends HttpServlet
+{
+
+    @EJB
     private Conect ejb;
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -32,19 +29,19 @@ public class UpdateRole extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("application/json;charset=UTF-8");
-        response.setHeader("Cache-Control","no-store");
+    protected void processRequest( HttpServletRequest request , HttpServletResponse response )
+        throws ServletException , IOException
+    {
+        response.setContentType( "application/json;charset=UTF-8" );
+        response.setHeader( "Cache-Control" , "no-store" );
         //vienen del formulario o cualquier otra peticion
-        String roleid = request.getParameter("roleid");
-        String rolename = request.getParameter("rolename");
-        
+        String roleid = request.getParameter( "roleid" );
+        String rolename = request.getParameter( "rolename" );
+
         PrintWriter out = response.getWriter();
-        
-        out.print(ejb.updateRole(roleid, rolename));
-       
-        
+
+        out.print( ejb.updateRole( roleid , rolename ) );
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -57,9 +54,10 @@ public class UpdateRole extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
+    protected void doGet( HttpServletRequest request , HttpServletResponse response )
+        throws ServletException , IOException
+    {
+        processRequest( request , response );
     }
 
     /**
@@ -71,9 +69,10 @@ public class UpdateRole extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
+    protected void doPost( HttpServletRequest request , HttpServletResponse response )
+        throws ServletException , IOException
+    {
+        processRequest( request , response );
     }
 
     /**
@@ -82,7 +81,8 @@ public class UpdateRole extends HttpServlet {
      * @return a String containing servlet description
      */
     @Override
-    public String getServletInfo() {
+    public String getServletInfo()
+    {
         return "Short description";
     }// </editor-fold>
 

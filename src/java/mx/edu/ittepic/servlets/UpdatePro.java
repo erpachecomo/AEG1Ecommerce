@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package mx.edu.ittepic.servlets;
 
 import java.io.IOException;
@@ -15,14 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import mx.edu.ittepic.ejbs.Conect;
 
-/**
- *
- * @author luis
- */
-@WebServlet(name = "UpdatePro", urlPatterns = {"/UpdatePro"})
-public class UpdatePro extends HttpServlet {
-@EJB
+@WebServlet( name = "UpdatePro" , urlPatterns =
+         {
+             "/UpdatePro"
+} )
+public class UpdatePro extends HttpServlet
+{
+
+    @EJB
     private Conect ejb;
+
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -32,29 +29,29 @@ public class UpdatePro extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-       response.setContentType("application/json;charset=UTF-8");
-        response.setHeader("Cache-Control","no-store");
+    protected void processRequest( HttpServletRequest request , HttpServletResponse response )
+        throws ServletException , IOException
+    {
+        response.setContentType( "application/json;charset=UTF-8" );
+        response.setHeader( "Cache-Control" , "no-store" );
         //vienen del formulario o cualquier otra peticion
         PrintWriter out = response.getWriter();
-        
-        String productid= request.getParameter("productid");
-        String categoryid= request.getParameter("categoryid");
-        String code= request.getParameter("code");
-        String productname= request.getParameter("productname");
-        String brand= request.getParameter("brand");
-        String purchprice= request.getParameter("purchprice");
-        String stock= request.getParameter("stock");
-        String salepricemin= request.getParameter("salepricemin");
-        String reorderpoint= request.getParameter("reorderpoint");
-        String currency= request.getParameter("currency");
-        String salepricemay= request.getParameter("salepricemay");
-        
-        out.print(ejb.UpdateProduct(productid,code,productname,brand,
-                purchprice,stock,salepricemin,reorderpoint,currency,salepricemay,categoryid));
-         
-       
+
+        String productid = request.getParameter( "productid" );
+        String categoryid = request.getParameter( "categoryid" );
+        String code = request.getParameter( "code" );
+        String productname = request.getParameter( "productname" );
+        String brand = request.getParameter( "brand" );
+        String purchprice = request.getParameter( "purchprice" );
+        String stock = request.getParameter( "stock" );
+        String salepricemin = request.getParameter( "salepricemin" );
+        String reorderpoint = request.getParameter( "reorderpoint" );
+        String currency = request.getParameter( "currency" );
+        String salepricemay = request.getParameter( "salepricemay" );
+
+        out.print( ejb.UpdateProduct( productid , code , productname , brand ,
+            purchprice , stock , salepricemin , reorderpoint , currency , salepricemay , categoryid ) );
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -67,9 +64,10 @@ public class UpdatePro extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
+    protected void doGet( HttpServletRequest request , HttpServletResponse response )
+        throws ServletException , IOException
+    {
+        processRequest( request , response );
     }
 
     /**
@@ -81,9 +79,10 @@ public class UpdatePro extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        processRequest(request, response);
+    protected void doPost( HttpServletRequest request , HttpServletResponse response )
+        throws ServletException , IOException
+    {
+        processRequest( request , response );
     }
 
     /**
@@ -92,7 +91,8 @@ public class UpdatePro extends HttpServlet {
      * @return a String containing servlet description
      */
     @Override
-    public String getServletInfo() {
+    public String getServletInfo()
+    {
         return "Short description";
     }// </editor-fold>
 
