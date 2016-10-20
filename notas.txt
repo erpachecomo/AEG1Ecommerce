@@ -1,1 +1,14 @@
-prueba
+
+<!--
+// // 1. Que cuando yó le de click en el botón eliminar,
+// // me pregunto si deseo eliminar o no
+
+// // 2. Buscar un Plugin que nos ayude a formatear los números
+// // << instalar plugins >>
+
+// // 3. La redire
+
+
+// // Apis y vistas de todas las categorías
+
+-->
