@@ -63,7 +63,7 @@ $(function () {
                //data:"roleid"
                 data: function (row) {
                     str = " <div align='right'>";
-                    str += accounting.formatMoney(row['roleid']);
+                    str += accounting.formatMoney(row["roleid"]);
                     str += "</div>";
                     return str;
                 }
