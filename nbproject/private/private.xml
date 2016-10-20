@@ -3,31 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/DeletePro.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/GetRoleByID.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/utils/Message.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/web/index.html</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/GetUsersByName.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/GetProducts.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/web/js/roles.js</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/web/mRoles.html</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/web/principal.html</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/web/roles.html</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/NewProduct.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/UpdateRole.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/GetProductByID.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/utils/Filtro.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/ejbs/Conect.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/web/css/style.css</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/web/login.html</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/UpdatePro.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/web/js/login.js</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/NewRole.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/GetProductByName.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/GetRoles.java</file>
             <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/web/js/app.js</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/DeleteRol.java</file>
-            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/src/java/mx/edu/ittepic/servlets/GetRoleByName.java</file>
+            <file>file:/Users/pi/NetBeansProjects/Team/AEG1Ecommerce/web/index.html</file>
         </group>
     </open-files>
 </project-private>
