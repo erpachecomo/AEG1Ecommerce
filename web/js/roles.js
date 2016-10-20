@@ -6,12 +6,12 @@
 //Este metodo se ejecuta cuando carga toda la pagina
 $(function () {
    
-    var tel=document.getElementById('tel');
+    /*var tel=document.getElementById('tel');
     tel.setCustomValidity("El formato debe ser +99");
-   
+   */
     
     
-    /*$('#frmRole').validate({
+    $('#frmRole').validate({
         rules: {
             rolename: {
                 minlength: 3,
@@ -46,7 +46,7 @@ $(function () {
             return false;
         }
 
-    });*/
+    });
     $('#tbRoles').DataTable({
         languaje: {
             url: "//cdn.datatables.net/plug-ins/1.10.10/i18n/Spanish.json"
@@ -63,7 +63,7 @@ $(function () {
                //data:"roleid"
                 data: function (row) {
                     str = " <div align='right'>";
-                    str += "$" + row['roleid'] + ".00";
+                    str += accounting.formatMoney(row['roleid']);
                     str += "</div>";
                     return str;
                 }
