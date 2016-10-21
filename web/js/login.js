@@ -15,12 +15,12 @@
                 }
             } ,
             messages: {
-                rolename: {
+                /*rolename: {
                     minlength: "Introduzca al menos 3 caracteres" ,
                     maxlength: "Introduzca maximo 20 caracteres" ,
                     required: "Inrodusca el Nombre de Usuario"
-                } ,
-                rolename:{
+                } ,*/
+                rolename: {
                     minlength: "Introduzca al menos 3 caracteres" ,
                     maxlength: "Introduzca maximo 20 caracteres" ,
                     required: "Inrodusca la contraseña"
@@ -80,32 +80,32 @@
             data: para
 
         } ).done(
-          function ( data )
-          {
-              // alert("Se realizo correctamente"+data.code);
-              if ( data.code === 200 )
-              {
-                  $.growl.notice( { message: data.msg + " " + data.details } );
-                  // swal("Eliminado!", "El registro se elimino correctamente", "success");
-                  // $('#tbRoles').dataTable().api().ajax.reload();
-                  //  $('#rolename').val("");
-              }
-              else
-              {
-                  $.growl.error( { message: data.msg + "" + data.details } );
+        function ( data )
+        {
+            // alert("Se realizo correctamente"+data.code);
+            if ( data.code === 200 )
+            {
+                $.growl.notice( { message: data.msg + " " + data.details } );
+                // swal("Eliminado!", "El registro se elimino correctamente", "success");
+                // $('#tbRoles').dataTable().api().ajax.reload();
+                //  $('#rolename').val("");
+            }
+            else
+            {
+                $.growl.error( { message: data.msg + "" + data.details } );
 
 
 
 
 
 
-              }
-          }
+            }
+        }
         ).fail(
-          function ()
-          {
-              $.growl.error( { message: "Algo va mal no se encuentra el servidor" } )
-          }
+        function ()
+        {
+            $.growl.error( { message: "Algo va mal no se encuentra el servidor" } )
+        }
         );
 
     }
