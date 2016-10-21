@@ -187,7 +187,7 @@
 
         swal(
           {
-              title: "¿Estas seguro que deseas eliminar este registro?" , text: "" ,
+            title: "¿Estas seguro que deseas eliminar este registro?" , text: "accounting plugin 42123123: " + accounting.formatMoney( 42123123 ) ,
               type: "warning" , showCancelButton: true ,
               confirmButtonColor: "#DD6B55" , confirmButtonText: "Aceptar!" ,
               cancelButtonText: "Cancelar" , closeOnConfirm: false ,
